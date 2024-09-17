@@ -1,56 +1,137 @@
+/* Base styles for mobile first */
 body {
   background-color: rgb(25, 25, 25);
-  font-family: Arial;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;    
+  color: #333;
 }
+
 .container {
-  max-width: 400px;
-  margin: 50px auto;
+  max-width: 90%;
+  width: 400px;
+  margin: 20px auto;
   background-color: white;
-  padding: 30px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
+  text-align: center;
 }
 
 .title {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.move-icon {
-  height: 50px;
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .move-button {
   background-color: transparent;
   border: 3px solid rgb(40, 39, 39);
-  width: 120px;
-  height: 120px;
-  border-radius: 60px;
-  margin-right: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 10px;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.move-icon {
+  height: 50px;
+  width: 50px;
 }
 
 .result {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .score {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .reset-score-button {
   background-color: rgb(25, 25, 25);
   border: none;
-  font-size: 15px;
-  padding: 8px 15px;
+  font-size: 14px;
+  padding: 10px 20px;
   cursor: pointer;
   color: white;
-  border-radius: 34px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+/* Styles for tablets and larger screens */
+@media (min-width: 600px) {
+  .container {
+    max-width: 80%;
+    padding: 30px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .move-button {
+    width: 100px;
+    height: 100px;
+  }
+
+  .move-icon {
+    height: 60px;
+    width: 60px;
+  }
+
+  .result {
+    font-size: 22px;
+  }
+
+  .score {
+    font-size: 18px;
+  }
+
+  .reset-score-button {
+    font-size: 16px;
+  }
+}
+
+/* Styles for larger screens */
+@media (min-width: 900px) {
+  .container {
+    max-width: 70%;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .move-button {
+    width: 120px;
+    height: 120px;
+  }
+
+  .move-icon {
+    height: 70px;
+    width: 70px;
+  }
+
+  .result {
+    font-size: 25px;
+  }
+
+  .score {
+    font-size: 20px;
+  }
+
+  .reset-score-button {
+    font-size: 18px;
+  }
 }
