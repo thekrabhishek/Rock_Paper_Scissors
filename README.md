@@ -14,7 +14,8 @@ You can play the game here:
 
 ## Game Demo 🎥
 
-![rock paper scissor](https://github.com/user-attachments/assets/c1ffa310-94f4-4673-8df9-866e45bf51a9)
+![fff](https://github.com/user-attachments/assets/0c5d1c5c-c1a6-4192-b5b7-8a76caad027f)
+
 
 ## How to Play 🕹️
 1. Select **Rock**, **Paper**, or **Scissors** by clicking on the respective buttons.
